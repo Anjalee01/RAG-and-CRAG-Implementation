@@ -72,3 +72,4 @@ if question:
     else:
         answer = "I have no knowledge about this topic."
     st.write("Answer:", answer)
+    print('Done')
