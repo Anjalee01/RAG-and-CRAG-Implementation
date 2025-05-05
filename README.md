@@ -1,14 +1,59 @@
-**RAG-based Question Answering App**
 
-This app is a Retrieval-Augmented Generation (RAG) based question-answering tool that leverages the Sentence Transformers model for document retrieval and Groq for generating answers. It allows users to upload a PDF file, which is then added to the app's knowledge base, enabling questions to be asked based on its content.
+# 📚 RAG-based Question Answering App
 
-**Features**
+This is a **Retrieval-Augmented Generation (RAG)** powered Question Answering (QA) application. It enhances traditional language model capabilities by incorporating context-aware document retrieval, allowing users to upload PDFs and ask questions based on the uploaded content. The app uses Groq's `gemma2-9b-it` model for response generation and `SentenceTransformers` for embedding-based retrieval.
 
-**PDF Upload & Knowledge Base Update**: Upload a PDF, and the app will extract text from the document and add it to the knowledge base.
+## 🚀 Features
 
-**Question Answering:** Enter a question related to the uploaded document or other knowledge in the base, and the app retrieves the most relevant document passage. It uses Groq to generate a response based on the retrieved context.
+- 🔍 **Contextual Retrieval** using Sentence-BERT embeddings
+- 🧠 **RAG Architecture** combining retrieval and generation
+- 🗂️ **PDF Upload Support** to dynamically expand the knowledge base
+- 💬 **Natural Question Answering** using Groq's LLM
+- 🌐 **Interactive UI** built with Streamlit
 
-**User-Friendly Interface:** Built on Streamlit, allowing seamless interactions.
+---
 
+## 🧰 Tech Stack
 
+- `Streamlit` – Web app framework
+- `SentenceTransformers` – Embedding-based semantic search
+- `Groq` – Fast LLM generation (gemma2-9b-it)
+- `PyPDF2` – PDF parsing and text extraction
+- `Python` – Core application logic
 
+---
+
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/rag-crag-app.git
+   cd rag-crag-app
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set up Groq API Key**
+   - Replace `"Your API Key here"` in the script with your actual Groq API key.
+
+4. **Run the Streamlit App**
+   ```bash
+   streamlit run app.py
+   ```
+
+---
+
+## 📄 Example Usage
+
+1. Upload a PDF containing relevant information.
+2. Ask a natural language question.
+3. Get context-aware, AI-generated answers.
+
+---
+
+## 📜 License
+
+This project is open-source under the MIT License.
